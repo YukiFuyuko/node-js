@@ -350,7 +350,7 @@ function connectBot(username) {
     state.food   = Math.round(bot.food   ?? 20);
     blog(state, `Spawned at (${state.pos})`);
     bot.chat('/register random123');
-    bot.chat('/server Survival);
+    bot.chat('/server Survival');
   });
 
   const posTimer = setInterval(() => {
