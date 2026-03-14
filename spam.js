@@ -29,7 +29,7 @@ const PORT            = 25565;
 const VERSION         = '1.21.11';
 const BASE_NAME       = 'nemesis';
 const RECONNECT_DELAY = 10000;
-const STAGGER_DELAY   = 50;
+const STAGGER_DELAY   = 5000;
 
 // ── File logger ───────────────────────────────────────────────────────────────
 // All output goes here — nothing is ever written to the terminal directly.
@@ -350,6 +350,7 @@ function connectBot(username) {
     state.food   = Math.round(bot.food   ?? 20);
     blog(state, `Spawned at (${state.pos})`);
     bot.chat('/register random123');
+    bot.chat('/server Survival);
   });
 
   const posTimer = setInterval(() => {
