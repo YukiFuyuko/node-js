@@ -29,7 +29,7 @@ const PORT            = 25565;
 const VERSION         = '1.21.11';
 const BASE_NAME       = 'nemesis';
 const RECONNECT_DELAY = 10000;
-const STAGGER_DELAY   = 3000;
+const STAGGER_DELAY   = 4000;
 
 // ── File logger ───────────────────────────────────────────────────────────────
 // All output goes here — nothing is ever written to the terminal directly.
