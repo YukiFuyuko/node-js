@@ -15,7 +15,6 @@ function createBot() {
     bot.on('spawn', () => {
         console.log('Misaki has spawned in the server.');
         startMovementLoop();
-        startChatLoop();
     });
 
     // Auto Reconnect Logic
@@ -48,15 +47,6 @@ async function startMovementLoop() {
         i++;
         await new Promise(res => setTimeout(res, 500)); // Short pause between moves
     }
-}
-
-// 2. Chat Loop: Repeated every 5 minutes
-function startChatLoop() {
-    setInterval(() => {
-        if (bot && bot.entity) {
-            bot.chat("I'm still here! (Keep-alive mode)");
-        }
-    }, 5 * 60 * 1000); // 5 minutes in milliseconds
 }
 
 createBot();
