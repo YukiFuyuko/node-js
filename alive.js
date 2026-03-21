@@ -4,7 +4,7 @@ const botArgs = {
     host: 'Hot-Snow.play.hosting',
     port: 25565, // Default MC port
     username: 'Misaki',
-    version: '1.21.1' // Mineflayer uses 1.21.1 for 1.21.11 compatibility
+    version: '1.21.11' // Mineflayer uses 1.21.1 for 1.21.11 compatibility
 };
 
 let bot;
